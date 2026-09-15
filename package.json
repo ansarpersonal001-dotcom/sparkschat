@@ -1,0 +1,36 @@
+{
+  "name": "sparkschat",
+  "version": "1.0.0",
+  "description": "Anonymous real-time 1-on-1 random chat web application (Omegle style)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:sim": "node test/simulate_chat.js",
+    "cap:sync": "cap sync android",
+    "cap:open": "cap open android"
+  },
+  "keywords": [
+    "chat",
+    "random-chat",
+    "socketio",
+    "omegle",
+    "anonymous"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansarpersonal001-dotcom/sparkschat.git"
+  },
+  "homepage": "https://github.com/ansarpersonal001-dotcom/sparkschat#readme",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.1"
+  }
+}

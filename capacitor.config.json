@@ -1,0 +1,20 @@
+{
+  "appId": "com.sparks.chat",
+  "appName": "SparksChat",
+  "webDir": "public",
+  "bundledWebRuntime": false,
+  "server": {
+    "url": "https://bio-islands-meet-lifestyle.trycloudflare.com",
+    "cleartext": true,
+    "allowNavigation": [
+      "bio-islands-meet-lifestyle.trycloudflare.com",
+      "*.trycloudflare.com",
+      "localhost:3000"
+    ]
+  },
+  "android": {
+    "allowMixedContent": true,
+    "captureInput": true,
+    "webContentsDebuggingEnabled": true
+  }
+}
