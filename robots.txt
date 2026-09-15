@@ -1,0 +1,11 @@
+# SparksChat Robots.txt
+# Controls web crawler indexing across search engines
+
+User-agent: *
+Allow: /
+Allow: /guidelines
+Disallow: /admin/
+Disallow: /socket.io/
+
+# Sitemap index
+Sitemap: https://bio-islands-meet-lifestyle.trycloudflare.com/sitemap.xml

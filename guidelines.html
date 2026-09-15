@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <!-- SEO Meta Tags -->
+  <title>Community Guidelines & Safety Rules - SparksChat</title>
+  <meta name="title" content="Community Guidelines & Safety Rules - SparksChat" />
+  <meta name="description" content="Read the SparksChat Community Guidelines. Learn about our zero-tolerance policies on harassment, minor safety, and our reporting and blocking system." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://bio-islands-meet-lifestyle.trycloudflare.com/guidelines" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://bio-islands-meet-lifestyle.trycloudflare.com/guidelines" />
+  <meta property="og:site_name" content="SparksChat" />
+  <meta property="og:title" content="Community Guidelines & Safety Rules - SparksChat" />
+  <meta property="og:description" content="Read the SparksChat Community Guidelines. Learn about our zero-tolerance policies on harassment, minor safety, and our reporting and blocking system." />
+  <meta property="og:image" content="https://bio-islands-meet-lifestyle.trycloudflare.com/icons/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Community Guidelines & Safety Rules - SparksChat" />
+  <meta name="twitter:description" content="Read the SparksChat Community Guidelines. Learn about our zero-tolerance policies on harassment, minor safety, and our reporting and blocking system." />
+  <meta name="twitter:image" content="https://bio-islands-meet-lifestyle.trycloudflare.com/icons/og-image.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=2.9" />
+  <style>
+    body {
+      overflow-y: auto !important;
+      background: radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12) 0%, #0b0f19 75%);
+    }
+    .guidelines-page-container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem 1.25rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .guidelines-page-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .guidelines-hero {
+      background: var(--bg-card);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 0.35rem 0.8rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+    }
+    .hero-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+    .hero-desc {
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .rules-card-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .rule-card {
+      background: var(--bg-card);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      transition: var(--transition);
+    }
+    .rule-card:hover {
+      border-color: rgba(59, 130, 246, 0.35);
+      background: rgba(255, 255, 255, 0.03);
+      transform: translateY(-1px);
+    }
+    .rule-badge-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .rule-content {
+      flex: 1;
+    }
+    .rule-content h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.35rem;
+    }
+    .rule-content p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .rule-danger {
+      border-color: rgba(239, 68, 68, 0.35);
+      background: rgba(239, 68, 68, 0.05);
+    }
+    .rule-danger .rule-badge-num {
+      background: rgba(239, 68, 68, 0.2);
+      border-color: rgba(239, 68, 68, 0.5);
+      color: #f87171;
+    }
+    .rule-danger h3 {
+      color: #fca5a5;
+    }
+    .rule-warning {
+      border-color: rgba(245, 158, 11, 0.35);
+      background: rgba(245, 158, 11, 0.05);
+    }
+    .rule-warning .rule-badge-num {
+      background: rgba(245, 158, 11, 0.2);
+      border-color: rgba(245, 158, 11, 0.5);
+      color: #fbbf24;
+    }
+    .rule-warning h3 {
+      color: #fde68a;
+    }
+    .guidelines-footer-box {
+      background: rgba(18, 24, 38, 0.9);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .guidelines-footer-box p {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="guidelines-page-container">
+    <header class="guidelines-page-header">
+      <div class="brand">
+        <span class="brand-spark">⚡</span>
+        <h1 class="brand-title">SparksChat</h1>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a
+          class="header-github-btn"
+          href="https://github.com/ansarpersonal001-dotcom/sparkschat"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="View SparksChat on GitHub"
+          aria-label="View SparksChat source code on GitHub"
+        >
+          <svg class="github-icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span class="github-btn-label">GitHub</span>
+        </a>
+        <a href="/" class="btn btn-secondary btn-sm" style="text-decoration: none;">← Back to Chat</a>
+      </div>
+    </header>
+
+    <main class="guidelines-hero">
+      <div class="hero-badge">🛡️ Platform Safety & Conduct</div>
+      <h2 class="hero-title">SparksChat Community Guidelines</h2>
+      <p class="hero-desc">
+        SparksChat connects you with strangers for anonymous conversation. To keep this space safe and enjoyable for everyone, please follow these guidelines.
+      </p>
+    </main>
+
+    <section class="rules-card-grid">
+      <div class="rule-card">
+        <div class="rule-badge-num">1</div>
+        <div class="rule-content">
+          <h3>Be respectful.</h3>
+          <p>No harassment, hate speech, threats, or abusive language toward the person you're matched with.</p>
+        </div>
+      </div>
+
+      <div class="rule-card rule-danger">
+        <div class="rule-badge-num">2</div>
+        <div class="rule-content">
+          <h3>No sexual content involving minors, ever.</h3>
+          <p>Any attempt to solicit, share, or discuss sexual content involving anyone under 18 will result in an immediate, permanent ban and may be reported to law enforcement.</p>
+        </div>
+      </div>
+
+      <div class="rule-card rule-warning">
+        <div class="rule-badge-num">3</div>
+        <div class="rule-content">
+          <h3>You must be 18 or older to use SparksChat.</h3>
+          <p>This app is not intended for minors. By using SparksChat, you confirm you meet this age requirement.</p>
+        </div>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-badge-num">4</div>
+        <div class="rule-content">
+          <h3>No sharing of illegal, violent, or explicit content.</h3>
+          <p>This includes but is not limited to: non-consensual imagery, graphic violence, illegal substances, or content that violates local laws.</p>
+        </div>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-badge-num">5</div>
+        <div class="rule-content">
+          <h3>No spam, scams, or solicitation.</h3>
+          <p>Don't use SparksChat to advertise, phish, or scam other users.</p>
+        </div>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-badge-num">6</div>
+        <div class="rule-content">
+          <h3>Use the Report and Block buttons.</h3>
+          <p>If someone makes you uncomfortable or violates these guidelines, report them immediately and block them. Reports help us keep the community safe.</p>
+        </div>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-badge-num">7</div>
+        <div class="rule-content">
+          <h3>Files and voice calls are still subject to these rules.</h3>
+          <p>Anonymity does not mean anything goes — the same standards apply across text, images, documents, and voice chat.</p>
+        </div>
+      </div>
+
+      <div class="rule-card">
+        <div class="rule-badge-num">8</div>
+        <div class="rule-content">
+          <h3>We may take action without notice.</h3>
+          <p>Violating these guidelines may result in disconnection, a temporary cooldown, or a permanent ban from the platform.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="guidelines-footer-box">
+      <p>By tapping <strong>"Start Chatting,"</strong> you agree to these guidelines.</p>
+      <a href="/" class="btn btn-primary btn-large" style="text-decoration: none;">
+        <span>💬 Return to SparksChat & Start Chatting</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
